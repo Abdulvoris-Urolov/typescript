@@ -22,10 +22,10 @@ variable = "string";
 variable = [];
 
 // ====
-// function sayMyName(name: string): void {
-//   console.log(name)
-// }
-// sayMyName(name: "Abdulvoris")
+function sayMyName(name: string): void {
+  console.log(name)
+}
+sayMyName("Abdulvoris")
 
 // never
 function throwError(message: string): never {
@@ -39,3 +39,14 @@ function infinite(): never {
 }
 
 // Type
+type Login = string
+
+const login: Login = "Admin"
+// const login2: Login = 2
+
+type ID = string | number //|boolean
+const id1: ID = 1234
+const id2: ID = "1234"
+// const id3: ID = true
+
+type SomeType = string | null | undefined
